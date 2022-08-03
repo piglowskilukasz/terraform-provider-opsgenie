@@ -51,6 +51,10 @@ signs:
       - "--detach-sign"
       - "${artifact}"
 release:
+  disable: false
+  github:
+      owner: piglowskilukasz
+      name: terraform-provider-opsgenie
   extra_files:
     - glob: 'terraform-registry-manifest.json'
       name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
